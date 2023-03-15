@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/trips"
+            android:icon="@drawable/trip_icon"
+            android:title="Trips" />
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/wallet_icon"
+            android:title="Payment" />
+        <item
+            android:id="@+id/favorite"
+            android:icon="@drawable/favorite_icon"
+            android:title="Favorite" />
+        <item
+            android:id="@+id/promo_code"
+            android:icon="@drawable/promo_code_icon"
+            android:title="Promo code" />
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/icon_notifications"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/support"
+            android:icon="@drawable/support_icon"
+            android:title="Support" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings" />
+    </group>
+
+</menu>

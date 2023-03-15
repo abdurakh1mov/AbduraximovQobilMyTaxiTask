@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'com.example.abduraximovqobilmytaxitask'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.abduraximovqobilmytaxitask"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField 'String', "MAP_TOKEN", '"sk.eyJ1IjoiYWJkdXJha2gxbW92IiwiYSI6ImNsZXgxMmZjYjEzeTkzd21rZnR4bXNyZGUifQ.pFW4Y3U3VxW3bxQ41jPZEQ"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //mapbox
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:6.8.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.7.2'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.11.0'
+
+    //circleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //    dagger Hilt
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+    implementation 'androidx.activity:activity-ktx:1.6.1'
+
+    //room
+    implementation "androidx.room:room-runtime:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+    implementation "androidx.room:room-ktx:2.4.3"
+    androidTestImplementation "androidx.room:room-testing:2.4.3"
+
+//    implementation ('com.example:example-library:1.0') {
+//        exclude group: 'androidx.core', module: 'core'
+//        exclude group: 'com.android.support', module: 'support-compat'
+//    }
+
+    //navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+}
