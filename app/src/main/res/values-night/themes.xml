@@ -13,4 +13,27 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <style name="OVAL_SHAPE">
+        <item name="backgroundTint">@color/colorOfShapeOvalNight</item>
+    </style>
+
+    <style name="BIG_OVAL_SHAPE">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:tint">@color/colorOfLikeBlack</item>
+        <item name="android:background">@drawable/shape_oval_with_gradient_night</item>
+    </style>
+
+    <style name="TEXT_STYLE_USER_NAME">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textStyleBigOval">
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/colorOfShapeOvalNight</item>
+    </style>
 </resources>

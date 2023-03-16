@@ -23,7 +23,7 @@ class AppCache private constructor(context: Context) {
         }
     }
 
-    fun getUserPhoto(): String = preferences.getString(USER_PHOTO, "Hello_app")!!
+    fun getUserPhoto(): String = preferences.getString(USER_PHOTO, "null")!!
 
     fun setUserPhoto(userPhone: String) {
         editor = preferences.edit()

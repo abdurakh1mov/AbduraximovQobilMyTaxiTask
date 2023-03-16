@@ -10,13 +10,5 @@
         android:name="com.example.abduraximovqobilmytaxitask.ui.fragments.mainpage.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
-        <action
-            android:id="@+id/action_mainFragment_to_tripsFragment"
-            app:destination="@id/tripsFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/tripsFragment"
-        android:name="com.example.abduraximovqobilmytaxitask.ui.fragments.tripspage.TripsFragment"
-        android:label="fragment_trips"
-        tools:layout="@layout/fragment_trips" />
 </navigation>

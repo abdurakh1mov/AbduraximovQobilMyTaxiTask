@@ -6,41 +6,24 @@ pluginManagement {
     }
 }
 
-//allprojects {
-//    repositories {
-//        maven {
-//            url 'https://api.mapbox.com/downloads/v2/releases/maven'
-//            authentication {
-//                basic(BasicAuthentication)
-//            }
-//            credentials {
-//                // Quyidagilarni o'zgartirmang
-//                // `mapbox` yozuvi qolsin
-//                username = 'mapbox'
-//// qo'shtirnoq o'rniga secret tokenni oozing
-//                password = project.properties['MAPBOX_DOWNLOADS_TOKEN'] ?: "sk.eyJ1IjoiYWJkdXJha2gxbW92IiwiYSI6ImNsZXgxMmZjYjEzeTkzd21rZnR4bXNyZGUifQ.pFW4Y3U3VxW3bxQ41jPZEQ"
-//            }
-//        }
-//    }
-//}
-
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        jcenter()
         maven {
             url 'https://api.mapbox.com/downloads/v2/releases/maven'
             authentication {
                 basic(BasicAuthentication)
             }
             credentials {
-                // Quyidagilarni o'zgartirmang
-                // `mapbox` yozuvi qolsin
                 username = 'mapbox'
-// qo'shtirnoq o'rniga secret tokenni oozing
                 password = "sk.eyJ1IjoiYWJkdXJha2gxbW92IiwiYSI6ImNsZXgxMmZjYjEzeTkzd21rZnR4bXNyZGUifQ.pFW4Y3U3VxW3bxQ41jPZEQ"
             }
+        }
+        maven {
+            url "https://jitpack.io"
         }
     }
 }

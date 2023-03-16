@@ -12,4 +12,5 @@
     <color name="colorOfAmountNotificationBack">#EF2E2E</color>
     <color name="colorOfLikeBlack">#1E1E1E</color>
     <color name="colorUnselected">#A5ABB3</color>
+    <color name="colorOfShapeOvalNight">#BEBEBE</color>
 </resources>

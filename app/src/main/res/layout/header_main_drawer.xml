@@ -36,7 +36,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto_bold"
             android:text="Muhammad"
-            android:textColor="@color/colorOfLikeBlack"
+            style="@style/TEXT_STYLE_USER_NAME"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

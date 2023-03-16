@@ -6,8 +6,6 @@
             <corners
                 android:bottomRightRadius="8dp"
                 android:topRightRadius="8dp" />
-            <solid android:color="@color/white" />
-
         </shape>
     </item>
 </ripple>

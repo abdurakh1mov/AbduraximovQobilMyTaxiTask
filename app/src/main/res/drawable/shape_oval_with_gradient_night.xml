@@ -3,7 +3,9 @@
     android:color="?colorControlHighlight">
     <item>
         <shape android:shape="oval">
-
+            <gradient
+                android:endColor="#BEBEBE"
+                android:startColor="#6C6C6C" />
         </shape>
     </item>
 </ripple>
