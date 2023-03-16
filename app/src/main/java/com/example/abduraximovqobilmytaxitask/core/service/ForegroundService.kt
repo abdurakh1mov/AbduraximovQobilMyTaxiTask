@@ -25,9 +25,9 @@ class ForegroundService : Service(), LocationListener {
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         locationRequest = LocationRequest.create().apply {
-            interval = 3000 // Update location every 5 seconds
-            fastestInterval = 2000 // Get the location as fast as possible
-            priority = LocationRequest.PRIORITY_HIGH_ACCURACY // Use high accuracy mode
+            interval = 3000
+            fastestInterval = 2000
+            priority = LocationRequest.PRIORITY_HIGH_ACCURACY
         }
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {
